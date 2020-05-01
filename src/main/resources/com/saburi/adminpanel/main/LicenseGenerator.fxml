@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<VBox fx:id = "mVBox" id="LicenseGenerator"  spacing="10"  xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.saburi.adminpanel.controllers.LicenseGeneratorController">
+    <children>
+
+        <GridPane vgap ="4" hgap="10">
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+            <Label id="LicenseGenerator" fx:id="lblLicenseNo" minWidth="100" text="License No" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <TextField fx:id = "txtLicenseNo" id = "LicenseGenerator"  GridPane.rowIndex = "0" GridPane.columnIndex = "1"  minWidth="100" promptText = "Enter License No">
+                <contextMenu>
+                    <ContextMenu fx:id ="cmuSelectLicenseNo" id = "LicenseGenerator">
+                        <items>
+                            <MenuItem mnemonicParsing="false" fx:id ="cmiLoad" id = "LicenseGenerator" text="Load" />   
+                        </items>
+                    </ContextMenu>
+                </contextMenu>
+            </TextField>  
+            <Label id="LicenseGenerator" fx:id="lblDetails" minWidth="100" text="Details" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <TextField fx:id = "txtDetails" id = "LicenseGenerator"  GridPane.rowIndex = "1" GridPane.columnIndex = "1" minWidth="100" promptText = "Enter Details"/> 
+            <Label id="LicenseGenerator" fx:id="lblLicenseType" minWidth="100" text="License Type" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <ComboBox fx:id = "cboLicenseType" id = "LicenseGenerator"  GridPane.rowIndex = "2" GridPane.columnIndex = "1" promptText = "Select License Type" minWidth="185.0"/> 
+            <Label id="LicenseGenerator" fx:id="lblStartDate" minWidth="100" text="Start Date" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+            <DatePicker fx:id = "dtpStartDate" id = "LicenseGenerator"  GridPane.rowIndex = "3" GridPane.columnIndex = "1" minWidth="185.0"/> 
+            <Label id="LicenseGenerator" fx:id="lblEndDate" minWidth="100" text="End Date" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+            <DatePicker fx:id = "dtpEndDate" id = "LicenseGenerator"  GridPane.rowIndex = "4" GridPane.columnIndex = "1" minWidth="185.0"/> 
+            <Label id="LicenseGenerator" fx:id="lblUserLimit" minWidth="100" text="User Limit" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+            <TextField fx:id = "txtUserLimit" id = "LicenseGenerator"  GridPane.rowIndex = "5" GridPane.columnIndex = "1" minWidth="100" promptText = "Enter User Limit"/> 
+            <Label id="LicenseGenerator" fx:id="lblRecordLimit" minWidth="100" text="Record Limit" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+            <TextField fx:id = "txtRecordLimit" id = "LicenseGenerator"  GridPane.rowIndex = "6" GridPane.columnIndex = "1" minWidth="100" promptText = "Enter Record Limit"/> 
+            <Label id="LicenseGenerator" fx:id="lblBaseTable" minWidth="100" text="Base Table" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+            <TextField fx:id = "txtBaseTable" id = "LicenseGenerator"  GridPane.rowIndex = "7" GridPane.columnIndex = "1" minWidth="100" promptText = "Enter Base Table"/>
+        </GridPane>
+        <HBox alignment="center" spacing="4.0">
+            <CheckBox id="LicenseGenerator" fx:id="chkSaveFile" selected="true" text="Save File" />
+            <TextField id="LicenseGenerator" fx:id="txtOutputDirectory" promptText="Enter Out Put Directory" minWidth = "250" text="C:\Licences" HBox.hgrow="ALWAYS" />  
+            <Button id="LicenseGenerator" fx:id="btnOutputDirectory" text="Browse" />
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" />
+            </padding>
+    
+        </HBox>
+        <AnchorPane>
+            <VBox spacing="2" AnchorPane.bottomAnchor="27.0" AnchorPane.leftAnchor="7.0">
+                <Button id="LicenseGenerator" fx:id="btnSearch"  prefWidth="80.0" text="Search" visible="false" />
+                <Button id="LicenseGenerator" fx:id="btnSave"  prefHeight="25.0" prefWidth="80.0" text="Save" />
+            </VBox>
+            <VBox spacing="2" AnchorPane.bottomAnchor="27.0" AnchorPane.rightAnchor="7.0">
+                <Button id="LicenseGenerator" fx:id="btnDelete"  prefWidth="80.0" text="Delete" visible="false" />
+                <Button id="LicenseGenerator" fx:id="btnClose"  prefHeight="25.0" prefWidth="80.0" text="Close" />
+            </VBox>
+        </AnchorPane>
+    </children>
+
+</VBox>
+

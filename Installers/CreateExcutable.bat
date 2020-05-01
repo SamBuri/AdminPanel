@@ -1,0 +1,2 @@
+cd C:\Users\Hp\Documents\NetBeansProjects\AdminPanel
+jpackage --type exe -i target\modules -d installers --name AdminPanel --main-class com.saburi.adminpanel.main.Main --main-jar  AdminPanel-1.0-SNAPSHOT.jar --app-version 1.0 --description "Personal App" --vendor "Sam Buriima" --icon Files\icon.ico --license-file Files\License.txt --win-dir-chooser --win-menu --win-per-user-install --win-shortcut --copyright "Saburi"

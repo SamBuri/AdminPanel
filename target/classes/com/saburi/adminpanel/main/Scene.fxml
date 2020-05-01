@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640" prefWidth="960"  xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.saburi.adminpanel.main.SceneController">
+    <top>
+        <VBox BorderPane.alignment="CENTER">
+            <children>
+                <MenuBar id="mnbMain" prefHeight="22.0" prefWidth="718.0">
+                    <menus>
+                        <Menu mnemonicParsing="false" fx:id ="mnuFile" text="File">
+                            <items>
+                                <MenuItem mnemonicParsing="false" fx:id ="mnuFileClose" text="Close" />
+                                <MenuItem mnemonicParsing="false" fx:id ="mnuFileLogout" text="Logout" />
+                            </items>
+                            
+                        </Menu>
+                        
+                      
+                        
+                        <Menu mnemonicParsing="false" text="Help">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="About" />
+                            </items>
+                        </Menu>
+                        
+                        <Menu id="Settings" mnemonicParsing="false" text="Setup">
+                            <items>
+                                <Menu id="LookupData" fx:id="mnuSettingsLookupData" mnemonicParsing="false" text="Lookup Data">
+                                    <MenuItem id="Create" fx:id="mnuSettingsLookupDataAdd" mnemonicParsing="false" text="New" />
+                                    <MenuItem id="Update" fx:id="mnuSettingsLookupDataUpdate" mnemonicParsing="false" text="Edit" />
+                                    <MenuItem id="Read" fx:id="mnuSettingsLookupDataView" mnemonicParsing="false" text="View" />
+                                </Menu>
+                            
+                                <Menu id="Company" fx:id="mnuCompany" mnemonicParsing="false" text="Company">
+                                    <MenuItem id="Create" fx:id="mnuCompanyAdd" mnemonicParsing="false" text="New" />
+                                    <MenuItem id="Update" fx:id="mnuCompanyUpdate" mnemonicParsing="false" text="Edit" />
+                                    <MenuItem id="Read" fx:id="mnuCompanyView" mnemonicParsing="false" text="View" />
+                                </Menu>
+                               
+                           
+                                <Menu id="Staff" fx:id="mnuStaff" mnemonicParsing="false" text="Staff">
+                                    <MenuItem id="Create" fx:id="mnuStaffAdd" mnemonicParsing="false" text="New" />
+                                    <MenuItem id="Update" fx:id="mnuStaffUpdate" mnemonicParsing="false" text="Edit" />
+                                    <MenuItem id="Read" fx:id="mnuStaffView" mnemonicParsing="false" text="View" />
+                                </Menu>
+
+                           
+                                <Menu id="Security" fx:id="mnuSettingsGeogaphicalLocation" text="Geographical Location">
+                                    <items>
+                                        <Menu id="County" fx:id="mnuCounty" mnemonicParsing="false" text="County">
+                                            <MenuItem id="Create" fx:id="mnuCountyAdd" mnemonicParsing="false" text="New" />
+                                            <MenuItem id="Update" fx:id="mnuCountyUpdate" mnemonicParsing="false" text="Edit" />
+                                            <MenuItem id="Read" fx:id="mnuCountyView" mnemonicParsing="false" text="View" />
+                                        </Menu>
+                                   
+                                        <Menu id="SubCounty" fx:id="mnuSubCounty" mnemonicParsing="false" text="Sub County">
+                                            <MenuItem id="Create" fx:id="mnuSubCountyAdd" mnemonicParsing="false" text="New" />
+                                            <MenuItem id="Update" fx:id="mnuSubCountyUpdate" mnemonicParsing="false" text="Edit" />
+                                            <MenuItem id="Read" fx:id="mnuSubCountyView" mnemonicParsing="false" text="View" />
+                                        </Menu>
+                                   
+                                        <Menu id="Parish" fx:id="mnuParish" mnemonicParsing="false" text="Parish">
+                                            <MenuItem id="Create" fx:id="mnuParishAdd" mnemonicParsing="false" text="New" />
+                                            <MenuItem id="Update" fx:id="mnuParishUpdate" mnemonicParsing="false" text="Edit" />
+                                            <MenuItem id="Read" fx:id="mnuParishView" mnemonicParsing="false" text="View" />
+                                        </Menu>
+                                  
+                                        <Menu id="Village" fx:id="mnuVillage" mnemonicParsing="false" text="Village">
+                                            <MenuItem id="Create" fx:id="mnuVillageAdd" mnemonicParsing="false" text="New" />
+                                            <MenuItem id="Update" fx:id="mnuVillageUpdate" mnemonicParsing="false" text="Edit" />
+                                            <MenuItem id="Read" fx:id="mnuVillageView" mnemonicParsing="false" text="View" />
+                                        </Menu>
+                                    </items>
+                                </Menu>
+                            
+                            
+                                <Menu id="Customisation" fx:id="mnuCustomisation" text="Customisation">
+                                    <items>
+                                       
+                                        <Menu id="IDGenerator" fx:id="mnuGenerator" mnemonicParsing="false" text="ID Generator">
+                                            <MenuItem id="Update" fx:id="mnuIDGeneratorUpdate" mnemonicParsing="false" text="Edit" />
+                                            <MenuItem id="Read" fx:id="mnuGeneratorView" mnemonicParsing="false" text="View" />
+                                        </Menu>
+                                        <Menu id="Options" fx:id="mnuOptions" mnemonicParsing="false" text="Options">
+                                            <MenuItem id="Update" fx:id="mnuOptionsUpdate" mnemonicParsing="false" text="Edit" />
+                                            <MenuItem id="Read" fx:id="mnuOptionsView" mnemonicParsing="false" text="View" />
+                                        </Menu>
+                                    </items>
+
+                                </Menu>
+                            
+                                <Menu id="Security" fx:id="mnuSettingsSecurity" text="Security">
+                                    <items>
+                                        <Menu id="UserRole" fx:id="mnuSecurityUserRole" mnemonicParsing="false" text="User Role">
+                                            <MenuItem id="Create" fx:id="mnuSecurityUserRoleAdd" mnemonicParsing="false" text="New" />
+                                            <MenuItem id="Update" fx:id="mnuSecurityUserRoleUpdate" mnemonicParsing="false" text="Edit" />
+                                            <MenuItem id="Delete" fx:id="mnuSecurityUserRoleView" mnemonicParsing="false" text="View" />
+                                        </Menu>
+                                   
+                                        <Menu id="AppUser" mnemonicParsing="false" text="Users">
+                                            <MenuItem id="Create" fx:id="mnuSettingsUsersAdd" mnemonicParsing="false" text="New" />
+                                            <MenuItem id="Update" fx:id="mnuSettingsUsersUpdate" mnemonicParsing="false" text="Edit" />
+                                            <MenuItem id="Read" fx:id="mnuSettingsUsersView" mnemonicParsing="false" text="View" />
+                                        </Menu>
+                                    
+                                        <MenuItem id="Update" fx:id="mnuLicenceUpdate" mnemonicParsing="false" text="Licence" />
+                                    </items>
+
+                                </Menu>
+                                
+                            </items>
+                            
+                        </Menu>
+                      
+                        
+                        <Menu mnemonicParsing="false" text="Reports">
+                           
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="View">
+                            <items>
+                                <MenuItem fx:id="mnuSearchEngine" mnemonicParsing="false" text="Search Engine" />
+                            </items>
+                        </Menu>
+                        
+                        
+                    </menus>
+                    <opaqueInsets>
+                        <!--<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />-->
+                    </opaqueInsets>
+                 
+                </MenuBar>
+                      
+                <ToolBar prefHeight="35.0" prefWidth="712.0">
+                    <items> 
+                        <SplitMenuButton fx:id="spmLicenseGenerator" id ="LicenseGenerator"  mnemonicParsing="false" text="License Generator">
+                            <items>
+                                <MenuItem fx:id="spmLicenseGeneratorNew" id ="Create" mnemonicParsing="false" text="New" />
+                                <MenuItem fx:id="spmLicenseGeneratorEdit" id ="Update" mnemonicParsing="false" text="Edit" />
+                                <MenuItem fx:id="spmLicenseGeneratorView" id ="Read" mnemonicParsing="false" text="View" />
+                            </items>
+                        </SplitMenuButton>
+                    </items>
+                </ToolBar>
+            </children>
+        </VBox>
+    </top>
+    <center>
+        <StackPane fx:id="stpMain" prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+    </center>
+    
+    <bottom>
+        <HBox spacing="6.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label fx:id="lblStatusBar" text="Saburi" />
+            </children>
+            
+        </HBox>
+    </bottom>
+</BorderPane>

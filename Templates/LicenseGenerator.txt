@@ -1,0 +1,9 @@
+IdHelper, Id Helper, int, ,, , , ID_Helper, 100, false, false, 
+LicenseNo, License No, String, ,, , Primary, Display, 20, false, false, 
+Details, Details, String, ,, , , , 100, false, true, 
+LicenseType, License Type, String, LicenseTypes,, , , , 100, true, true, 1
+StartDate, Start Date, LocalDate, ,, , , , 100, false, true, 
+EndDate, End Date, LocalDate, ,, , , , 100, false, true, 
+UserLimit, User Limit, int, ,, , , , 100, false, true, 
+RecordLimit, Record Limit, int, ,, , , , 100, false, true, 
+BaseTable, Base Table, String, ,, , , , 100, false, true, 

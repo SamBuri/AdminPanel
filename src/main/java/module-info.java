@@ -1,0 +1,36 @@
+open module com.saburi.adminpanel {
+    requires com.saburi.Common;
+    requires org.hibernate.orm.core;
+    requires org.jboss.logging;
+    requires javassist;
+    requires net.bytebuddy;
+    requires antlr;
+    requires java.transaction;
+    requires jandex;
+    requires com.fasterxml.classmate;
+    requires java.activation;
+    requires dom4j;
+    requires org.hibernate.commons.annotations;
+    requires java.xml.bind;
+    requires java.persistence;
+    requires org.hibernate.orm.envers;
+    requires org.hibernate.validator;
+    requires java.validation;
+    requires javax.el;
+    requires com.sun.xml.bind;
+    requires com.sun.xml.txw2;
+    requires com.sun.istack.runtime;
+    requires org.jvnet.staxex;
+    requires com.sun.xml.fastinfoset;
+    requires mysql.connector.java;
+    requires protobuf.java;
+    requires itextpdf;
+    requires org.kordamp.desktoppanefx.core;
+    requires org.kordamp.ikonli.javafx;
+    requires org.kordamp.ikonli.materialdesign;
+    requires org.apache.logging.log4j;
+    requires org.apache.logging.log4j.core;
+    requires javafx.swing;
+    requires fontawesomefx;
+    exports com.saburi.adminpanel.main;
+}
